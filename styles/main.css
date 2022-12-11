@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.page {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  width: 250px;
+  height: 430px;
+  background-color: white;
+  padding: 20px;
+  margin: 100px 50px;
+}
+.menu div {
+  display: flex;
+  justify-content: space-around;
+}
+.menu h1 {
+  text-align: center;
+  color: violet;
+  margin-bottom: 20px;
+}
+.menu p {
+  margin-bottom: 10px;
+  color: green;
+  font-size: 20px;
+}
+.menu h2 {
+  color: black;
+  text-align: center;
+}
+.menu .btn-cheese {
+  padding: 0 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: slategrey;
+  border: none;
+}
+.menu .btn-cheese:hover {
+  background-color: violet;
+  color: white;
+}
+.menu .btn-meat {
+  padding: 0 17px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: slategray;
+  border: none;
+}
+.menu .btn-meat:hover {
+  background-color: violet;
+  color: white;
+}
+.menu .btn-onion {
+  padding: 0 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: slategray;
+  border: none;
+}
+.menu .btn-onion:hover {
+  background-color: yellowgreen;
+  color: white;
+}
+.menu .btn-salad {
+  padding: 0 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: slategray;
+  border: none;
+}
+.menu .btn-salad:hover {
+  background-color: yellowgreen;
+  color: white;
+}
+.menu .btn-tomato {
+  padding: 0 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: slategray;
+  border: none;
+}
+.menu .btn-tomato:hover {
+  background-color: violet;
+  color: white;
+}
+.menu .btn-pickle {
+  padding: 0 13px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: slategray;
+  border: none;
+}
+.menu .btn-pickle:hover {
+  background-color: yellowgreen;
+  color: white;
+}
+.menu .order {
+  padding: 5px 10px;
+  background-color: sandybrown;
+  color: wheat;
+  border: none;
+  margin: 0 auto;
+  font-size: 15px;
+  margin-top: 10px;
+}
+.menu .order:hover {
+  background-color: green;
+  color: white;
+}
+.menu .ordertext {
+  color: black;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.burger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.burger .burger-top {
+  transform: translateY(50px);
+}
+.burger .ingradients {
+  display: flex;
+  flex-direction: column;
+}

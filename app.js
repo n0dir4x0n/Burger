@@ -1,0 +1,200 @@
+let btnCheese = document.querySelector(".btn-cheese");
+let btnMeat = document.querySelector(".btn-meat");
+let btnOnion = document.querySelector(".btn-onion");
+let btnSalad = document.querySelector(".btn-salad");
+let btnTomato = document.querySelector(".btn-tomato");
+let btnPickle = document.querySelector(".btn-pickle");
+let burgertop = document.querySelector(".burger-top");
+let pul = document.querySelector(".pul");
+let buyurtma = document.querySelector(".order");
+let b = 0;
+let a = 0;
+let c = 50;
+let e = 1;
+let total = 2;
+pul.textContent = `${total}`;
+btnCheese.addEventListener("click", () => {
+  total += 2;
+  let img = document.createElement("img");
+  let ingradients = document.querySelector(".ingradients");
+  ingradients.prepend(img);
+  img.setAttribute("src", "../images/cheese.svg");
+  a += 80;
+  b += 1;
+  e += 1;
+  c += 80;
+  img.style.transform = `translateY(${a}px)`;
+  img.style.zIndex = `${b}`;
+  burgertop.style.transform = `translateY(${c}px)`;
+  burgertop.style.zIndex = `${e}`;
+  pul.textContent = `${total}`;
+  img.addEventListener("click", () => {
+    a -= 80;
+    b -= 1;
+    e -= 1;
+    c -= 80;
+    img.style.transform = `translateY(${a}px)`;
+    img.style.zIndex = `${b}`;
+    burgertop.style.transform = `translateY(${c}px)`;
+    burgertop.style.zIndex = `${e}`;
+    img.remove();
+    total -= 2;
+    pul.textContent = `${total}`;
+  });
+});
+
+btnMeat.addEventListener("click", () => {
+  total += 5;
+  let img = document.createElement("img");
+  let ingradients = document.querySelector(".ingradients");
+  ingradients.prepend(img);
+  img.setAttribute("src", "../images/meat.svg");
+  a += 60;
+  b += 1;
+  e += 1;
+  c += 60;
+  img.style.transform = `translateY(${a}px)`;
+  img.style.zIndex = `${b}`;
+  burgertop.style.transform = `translateY(${c}px)`;
+  burgertop.style.zIndex = `${e}`;
+  pul.textContent = `${total}`;
+  img.addEventListener("click", () => {
+    a -= 60;
+    b -= 1;
+    e -= 1;
+    c -= 60;
+    img.style.transform = `translateY(${a}px)`;
+    img.style.zIndex = `${b}`;
+    burgertop.style.transform = `translateY(${c}px)`;
+    burgertop.style.zIndex = `${e}`;
+    img.remove();
+    total -= 5;
+    pul.textContent = `${total}`;
+  });
+});
+
+btnOnion.addEventListener("click", () => {
+  total += 1;
+  let img = document.createElement("img");
+  let ingradients = document.querySelector(".ingradients");
+  ingradients.prepend(img);
+  img.setAttribute("src", "../images/onion.svg");
+  a += 80;
+  b += 1;
+  e += 1;
+  c += 80;
+  img.style.transform = `translateY(${a}px)`;
+  img.style.zIndex = `${b}`;
+  burgertop.style.transform = `translateY(${c}px)`;
+  burgertop.style.zIndex = `${e}`;
+  pul.textContent = `${total}`;
+  img.addEventListener("click", () => {
+    a -= 80;
+    b -= 1;
+    e -= 1;
+    c -= 80;
+    img.style.transform = `translateY(${a}px)`;
+    img.style.zIndex = `${b}`;
+    burgertop.style.transform = `translateY(${c}px)`;
+    burgertop.style.zIndex = `${e}`;
+    img.remove();
+    total -= 1;
+    pul.textContent = `${total}`;
+  });
+});
+
+btnSalad.addEventListener("click", () => {
+  total += 1;
+  let img = document.createElement("img");
+  let ingradients = document.querySelector(".ingradients");
+  ingradients.prepend(img);
+  img.setAttribute("src", "../images/salad.svg");
+  a += 40;
+  b += 1;
+  e += 1;
+  c += 40;
+  img.style.transform = `translateY(${a}px)`;
+  img.style.zIndex = `${b}`;
+  burgertop.style.transform = `translateY(${c}px)`;
+  burgertop.style.zIndex = `${e}`;
+  pul.textContent = `${total}`;
+  img.addEventListener("click", () => {
+    a -= 40;
+    b -= 1;
+    e -= 1;
+    c -= 40;
+    img.style.transform = `translateY(${a}px)`;
+    img.style.zIndex = `${b}`;
+    burgertop.style.transform = `translateY(${c}px)`;
+    burgertop.style.zIndex = `${e}`;
+    img.remove();
+    total -= 1;
+    pul.textContent = `${total}`;
+  });
+});
+
+btnTomato.addEventListener("click", () => {
+  total += 2;
+  let img = document.createElement("img");
+  let ingradients = document.querySelector(".ingradients");
+  ingradients.prepend(img);
+  img.setAttribute("src", "../images/tomato.svg");
+  a += 50;
+  b += 1;
+  e += 1;
+  c += 50;
+  img.style.transform = `translateY(${a}px)`;
+  img.style.zIndex = `${b}`;
+  burgertop.style.transform = `translateY(${c}px)`;
+  burgertop.style.zIndex = `${e}`;
+  pul.textContent = `${total}`;
+  img.addEventListener("click", () => {
+    a -= 50;
+    b -= 1;
+    e -= 1;
+    c -= 50;
+    img.style.transform = `translateY(${a}px)`;
+    img.style.zIndex = `${b}`;
+    burgertop.style.transform = `translateY(${c}px)`;
+    burgertop.style.zIndex = `${e}`;
+    img.remove();
+    total -= 2;
+    pul.textContent = `${total}`;
+  });
+});
+
+btnPickle.addEventListener("click", () => {
+  total += 3;
+  let img = document.createElement("img");
+  let ingradients = document.querySelector(".ingradients");
+  ingradients.prepend(img);
+  img.setAttribute("src", "../images/pickle.svg");
+  a += 40;
+  b += 1;
+  e += 1;
+  c += 40;
+  img.style.transform = `translateY(${a}px)`;
+  img.style.zIndex = `${b}`;
+  burgertop.style.transform = `translateY(${c}px)`;
+  burgertop.style.zIndex = `${e}`;
+  pul.textContent = `${total}`;
+  img.addEventListener("click", () => {
+    a -= 40;
+    b -= 1;
+    e -= 1;
+    c -= 40;
+    img.style.transform = `translateY(${a}px)`;
+    img.style.zIndex = `${b}`;
+    burgertop.style.transform = `translateY(${c}px)`;
+    burgertop.style.zIndex = `${e}`;
+    img.remove();
+    total -= 3;
+    pul.textContent = `${total}`;
+  });
+});
+
+buyurtma.addEventListener("click", () => {
+  let no = document.querySelector(".no");
+  let n = Math.floor(Math.random() * 30) + 1;
+  no.textContent = `${n}`;
+});

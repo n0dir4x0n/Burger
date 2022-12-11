@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": ".."
+	},
+	{
+		"path": "../../../../Downloads/burger-layers-2 copy"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "burger"
+  }
+}
